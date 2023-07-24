@@ -1,0 +1,27 @@
+{% extends 'menu.html' %}
+{% load static %}
+{% block title %} Tunc Ozdas {% endblock %}
+{% block content %}
+            {% for h in Hakkimda %}
+            {% include 'about.html' %}
+            {% endfor %}
+            
+            {% for d in deneyimler %}
+            {% include 'experience.html' %}
+            {% endfor %}
+
+            {% for e in egitimler %}
+            {% include 'education.html' %}
+            {% endfor %}
+
+            {% for y in yeteneler %}
+            {% include 'skills.html' %}
+            {% endfor %}
+
+            {% for e in beceriler %}
+            {% include 'interest.html' %}
+            {% endfor %}
+
+            {% for e in sertifalar %}
+            {% include 'certifica.html' %}
+            {% endfor %}
